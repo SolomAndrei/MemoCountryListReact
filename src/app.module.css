@@ -1,0 +1,13 @@
+.wrapper {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}

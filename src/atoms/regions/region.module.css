@@ -1,0 +1,12 @@
+.region {
+    color: #2a7a2a;
+    padding: 2px 0;
+    transition: color 0.2s;
+}
+
+.region:hover {
+    color: #1e5e1e;
+}
+.regionBox {
+    display: flex;
+}
