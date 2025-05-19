@@ -1,6 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
 import { allCountries } from 'country-region-data';
 import { Country } from '../../organism/country/Country';
+import { MyButton } from '../../atoms/myButton/MyButton';
 import styles from './countries.module.css';
 
 const createObj = (allCountries) => {
@@ -38,9 +39,7 @@ export const Countries = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.leftSide}>
-                <button className={styles.collapseButton} onClick={closeAllCountries}>
-                    Collapse All
-                </button>
+                <MyButton onClick={closeAllCountries}>Collapse All</MyButton>
                 {Object.keys(reducedCountries).map((countryCode) => {
                     const { countryName } = reducedCountries[countryCode];
                     const isOpen = openCountries[countryCode];
